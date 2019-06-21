@@ -1,6 +1,6 @@
 {
-  "name": "crass",
-  "version": "0.12.3",
+  "name": "@prantlf/crass",
+  "version": "0.12.4",
   "description": "A CSS utility library for JS",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mattbasta/crass.git"
+    "url": "git://github.com/prantlf/crass.git"
   },
   "bin": {
     "crass": "./bin/crass"

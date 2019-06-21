@@ -2,8 +2,10 @@
 
 A CSS minification, pretty printing, and general utility library written in JS.
 
-[![Build Status](https://travis-ci.org/mattbasta/crass.svg?branch=master)](https://travis-ci.org/mattbasta/crass)
+[![Build Status](https://travis-ci.org/prantlf/crass.svg?branch=master)](https://travis-ci.org/prantlf/crass)
 [![Build status](https://ci.appveyor.com/api/projects/status/vwp3b6p6jf9563dg?svg=true)](https://ci.appveyor.com/project/mattbasta/crass)
+
+This is a fork depending on up-to-date modules to avoid security issues.
 
 ## Why Crass?
 
@@ -32,14 +34,14 @@ which makes it impossible to perform all types of optimizations.
 Crass is built with ES2015 and requires Node 6 or higher.
 
 ```sh
-npm install --save-dev crass
+npm install --save-dev @prantlf/crass
 ```
 
 
 ## API
 
 ```js
-var crass = require('crass');
+var crass = require('@prantlf/crass');
 
 // Parse any valid CSS stylesheet:
 var parsed = crass.parse('b {font-weight: bold;}');
@@ -61,7 +63,7 @@ Improvements on the API will be made in the future.
 
 ## Command Line Interface
 
-If you `npm install -g crass`, you'll get `crass` on your PATH.
+If you `npm install -g @prantlf/crass`, you'll get `crass` on your PATH.
 
 ```bash
 crass input.css [--optimize [--O1]] [--min x,y,z] [--pretty] [--saveie] [--css4]

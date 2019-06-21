@@ -1,7 +1,7 @@
 const path = require('path');
 
 const sdu = require('strong-data-uri');
-const svgo = require('svgo');
+const svgo = require('@prantlf/svgo');
 
 const objects = require('../objects');
 

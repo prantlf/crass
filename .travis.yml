@@ -3,6 +3,17 @@ node_js:
   - node
   - lts/*
   - 10
+before_install:
+  - curl -L https://unpkg.com/@pnpm/self-installer | node
+  - pnpm config set store-dir ~/.pnpm-store
+install:
+  - pnpm i --frozen-lockfile --no-verify-store-integrity
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
+notifications:
+  email: false
 cache:
+  npm: false
   directories:
-    - node_modules
+    - "~/.pnpm-store"
